@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/style.css') }}">
+    <script type = "text/javascript" src = "{{ url_for('static', filename = 'script/script.js') }}"></script>
+    <title>Marks Form</title>
+</head>
+<body>
+    <h2>Enter Marks for 5 Subjects</h2>
+    <form action="/submit" method="POST">
+        <label for="subject1">Subject 1:</label>
+        <input type="number" id="subject1" name="subject1" min="0" max="100" required><br><br>
+        
+        <label for="subject2">Subject 2:</label>
+        <input type="number" id="subject2" name="subject2" min="0" max="100" required><br><br>
+        
+        <label for="subject3">Subject 3:</label>
+        <input type="number" id="subject3" name="subject3" min="0" max="100" required><br><br>
+        
+        <label for="subject4">Subject 4:</label>
+        <input type="number" id="subject4" name="subject4" min="0" max="100" required><br><br>
+        
+        <label for="subject5">Subject 5:</label>
+        <input type="number" id="subject5" name="subject5" min="0" max="100" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
